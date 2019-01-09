@@ -1,0 +1,95 @@
+!
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Loan Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="app.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="card card1">
+      <div class="card-content">
+        <h3 class="title is-3" id = "heading"><i class="fa fa-calculator" aria-hidden="true"></i>
+          Loan Calculator
+          <hr />
+        </h3>
+        <form id ="loan-form">
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <span class="icon is-medium is-left">
+                <i class="fa fa-inr" aria-hidden="true"></i>
+              </span>
+              <input class="input is-info is-rounded" id="amount" type="text" placeholder="Enter the Loan Amount"/>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <span class="icon is-medium is-left">
+                <i class="fa fa-percent" aria-hidden="true"></i>
+              </span>
+              <input class="input is-info is-rounded" id="interest" type="text" placeholder="Enter the Annual Interest">
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <span class="icon is-medium is-left">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+              </span>
+              <input class="input is-info is-rounded" id="years" type="text" placeholder="Enter the Repayment Years">
+            </p>
+          </div>
+          <div class="buttona">
+            <button type="submit" class="submit button is-link is-outlined">Calculate</button>
+          </div>
+        </form>
+        <!--preloder-->
+        <div id="loading" class="is-centered"><img src ="ripple.gif" alt ="preloader"/>
+        </div>
+
+
+<!----->
+<div id ="results">
+        <h4 class="title is-4" >Result</h4>
+        <hr/>
+        <div class="columns has-text-centered">
+            <div class="column">
+              <div class="card">
+                <div class="card-content">
+                    <h5 class="title is-5">Monthly Payment</h5>
+                    <hr/>
+                    <h5 class="title is-5" id ="MonthPay"></h5>
+                </div>
+                </div>
+                </div>
+            <div class="column"><div class="card">
+                <div class="card-content">
+                    <h5 class="title is-5">Total Payment</h5>
+                    <hr/>
+                    <h5 class="title is-5"id ="TotalPay"></h5>
+                </div>
+                </div></div>
+            <div class="column">
+              <div class="card">
+                <div class="card-content">
+                    <h5 class="title is-5">Total Interest</h5>
+                    <hr/>
+                    <h5 class="title is-5" id ="TotalInt"></h5>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <script src="app.js"></script>
+</body>
+
+</html>

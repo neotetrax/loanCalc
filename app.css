@@ -1,0 +1,41 @@
+body {
+  background-color: #242582;
+}
+
+/* #242582; */
+.card1 {
+  border-radius: 20px;
+  width: 50%;
+  height:default;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  clear: both;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+
+.button {
+  width: 200px;
+}
+
+.buttona {
+  padding-top: 10px;
+  text-align: center;
+
+}
+
+#loading, #results {
+
+  display: none;
+
+}
+
+#loading{
+  text-align: center;
+}
